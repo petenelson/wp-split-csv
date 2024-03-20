@@ -136,8 +136,6 @@ function split_csv( $file, $args = [] ) {
 function split_added_csv( $attachment_id ) {
 	if ( 'text/csv' === get_post_mime_type( $attachment_id ) ) {
 		$results = split_csv( get_attached_file( $attachment_id ) );
-
-		var_dump( $results ); die();
 	}
 }
 
