@@ -47,9 +47,8 @@ function split_csv( $file, $args = [] ) {
 	$args = wp_parse_args(
 		$args,
 		[
-			'delete_source_after_split' => false,
-			'lines_per_file'            => 5, // TODO
-			'pad_filename_with'         => '0',
+			'lines_per_file'    => 100,
+			'pad_filename_with' => '0',
 		]
 	);
 
